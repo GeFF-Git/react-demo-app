@@ -7,11 +7,14 @@ import Home from './../Home';
 // import Footer from './'
 export default function Layout() {
 
+  const styles = {
+    height: 'calc(100vh - 75px)',
+  }
   return (
 <>
 <div className='h-full'>
   <Header></Header>
-  <div className='content'>
+  <div className='' style={{height : 'calc(100vh-75px)',overflowY: 'auto'}}>
     <Outlet></Outlet>
   </div>
 </div>
